@@ -5,7 +5,7 @@ Ferramenta desenvolvida em Python/Streamlit para automação e validação de c�
 
 ---
 
-## 🇧🇷 Português: Documentação do Algoritmo
+## Português: Documentação do Algoritmo
 
 ### Objetivo
 Padronizar a conversão entre unidades de venda (EAN-13) e unidades de embarque (DUN-14/GTIN-14), gerando automaticamente todas as 9 variantes logísticas possíveis para cada SKU.
@@ -18,17 +18,9 @@ O algoritmo segue o padrão global da GS1 para cálculo de dígito verificador:
 4. **Soma e Módulo:** O resultado da soma das multiplicações é submetido ao Módulo 10.
 5. **Dígito Final:** O dígito verificador é a diferença entre o resultado e o próximo múltiplo de 10.
 
-### Tabela de Variantes
-| Variante | Descrição |
-| :--- | :--- |
-| 1 | Caixa Padrão / Primária |
-| 2 | Caixa Master / Fardo Secundário |
-| 3 - 8 | Grandes Volumes e Paletes |
-| 9 | Itens de Peso Variável (Obrigatório) |
-
 ---
 
-## 🇺🇾 Español: Documentación del Algoritmo
+## Español: Documentación del Algoritmo
 
 ### Objetivo
 Estandarizar la conversión entre unidades de venta (EAN-13) y unidades de transporte (DUN-14/GTIN-14), generando automáticamente las 9 variantes logísticas posibles para cada SKU.
