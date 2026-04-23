@@ -80,7 +80,7 @@ O que são Variantes Logísticas? As **Variantes Logísticas** (ou Indicadores L
 
 st.divider()
 
-arquivo_upload = st.file_uploader("Arraste seu arquivo Excel ou CSV (SKUs na Coluna A)", type=["xlsx", "xls", "csv"])
+arquivo_upload = st.file_uploader("Arraste seu arquivo Excel (Somente SKUs na Coluna A)", type=["xlsx"])
 
 if arquivo_upload is not None:
     try:
@@ -104,7 +104,7 @@ if arquivo_upload is not None:
         processed_data = output.getvalue()
         
         st.download_button(
-            label="⬇️ Baixar Relatório Completo",
+            label="⬇ Baixar Relatório Completo",
             data=processed_data,
             file_name="mapeio_pack_logistica.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
