@@ -2,9 +2,7 @@ import streamlit as st
 import pandas as pd
 import io
 
-# ==========================================
-# 1. FUNÇÕES DE LÓGICA E CÁLCULO
-# ==========================================
+# FUNÇÕES DE LÓGICA E CÁLCULO
 
 def calcular_digito_gs1(payload: str) -> str:
     """
@@ -62,9 +60,7 @@ def processar_sku(sku) -> pd.Series:
     return pd.Series(resultado)
 
 
-# ==========================================
-# 2. INTERFACE STREAMLIT
-# ==========================================
+# INTERFACE STREAMLIT
 
 st.set_page_config(page_title="Mapeio Pack", layout="wide")
 
