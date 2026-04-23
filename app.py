@@ -78,17 +78,19 @@ O que são Variantes Logísticas? As **Variantes Logísticas** (ou Indicadores L
 | **3 a 8** | **Grandes Volumes e Paletes:** Utilizados para níveis crescentes de empacotamento. Dominante em Atacarejos (Cash & Carry), Materiais de Construção e recebimento de Eletrodomésticos. |
 | **9** | **Itens de Peso Variável:** Uso exclusivo e obrigatório para produtos cujo preço ou quantidade varia por embalagem. Essencial para Açougue, Hortifrúti (FLV), Frios e Laticínios. |
 
+---
 
 Padronizar a conversão entre unidades de venda (EAN-13) e unidades de embarque (DUN-14/GTIN-14), gerando automaticamente todas as 9 variantes logísticas possíveis para cada SKU.
 
 Lógica de Cálculo (Módulo 10)
 O algoritmo segue o padrão global da GS1 para cálculo de dígito verificador:
 
-Extração da Base: O sistema extrai os 12 dígitos fundamentais do SKU (do dígito 1 ao 12 no EAN-13; do dígito 2 ao 13 no DUN-14).
-Adição do Prefixo: Adiciona-se o Indicador Logístico (Variante de 1 a 9) à frente da base.
-Ponderação: Da direita para a esquerda, os 13 dígitos resultantes são multiplicados alternadamente por pesos 3 e 1.
-Soma e Módulo: O resultado da soma das multiplicações é submetido ao Módulo 10.
-Dígito Final: O dígito verificador é a diferença entre o resultado e o próximo múltiplo de 10.""")
+1. **Extração da Base:** O sistema extrai os 12 dígitos fundamentais do SKU (do dígito 1 ao 12 no EAN-13; do dígito 2 ao 13 no DUN-14).
+2. **Adição do Prefixo:** Adiciona-se o Indicador Logístico (Variante de 1 a 9) à frente da base.
+3. **Ponderação:** Da direita para a esquerda, os 13 dígitos resultantes são multiplicados alternadamente por pesos **3** e **1**.
+4. **Soma e Módulo:** O resultado da soma das multiplicações é submetido ao Módulo 10.
+5. **Dígito Final:** O dígito verificador é a diferença entre o resultado e o próximo múltiplo de 10.
+""")
 
 
 st.divider()
