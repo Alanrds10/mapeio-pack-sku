@@ -80,7 +80,7 @@ O que são Variantes Logísticas? As **Variantes Logísticas** (ou Indicadores L
 
 st.divider()
 
-arquivo_upload = st.file_uploader("Arraste seu arquivo Excel (Somente SKUs na Coluna A)", type=["xlsx"])
+arquivo_upload = st.file_uploader("Arraste seu arquivo Excel (Somente os SKUs na Coluna A)", type=["xlsx"])
 
 if arquivo_upload is not None:
     try:
