@@ -92,7 +92,7 @@ O algoritmo segue o padrão global da GS1 para cálculo de dígito verificador:
 5. **Dígito Final:** O dígito verificador é a diferença entre o resultado e o próximo múltiplo de 10.
 """)
 
-st.warning("⚠️ **Atenção Operacional:** Esta ferramenta calcula todas as 9 variantes matematicamente válidas pelo Módulo 10 da GS1 (o 'gabarito'). Contudo, a existência física de uma caixa ou fardo correspondente a esses códigos depende exclusivamente do que o fabricante produz e tem cadastrado no sistema ativo da empresa.")
+st.warning("⚠️ **Atenção:** Esta ferramenta calcula todas as 9 variantes matematicamente válidas pelo Módulo 10 da GS1 (o 'gabarito'). Contudo, a existência física de uma caixa ou fardo correspondente a esses códigos depende exclusivamente do que o fabricante produz e temos ativo na base.")
 
 st.divider()
 
